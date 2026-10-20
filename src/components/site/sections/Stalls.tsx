@@ -20,7 +20,6 @@ export function Stalls() {
               <MessageCircle /> WhatsApp {STALL_WHATSAPP.display}
             </a>
           </Button>
-          <span className="text-sm opacity-80">Or call {STALL_WHATSAPP.display}</span>
         </div>
       </Container>
     </section>

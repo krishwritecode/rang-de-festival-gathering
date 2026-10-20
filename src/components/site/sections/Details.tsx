@@ -5,7 +5,7 @@ import { RegisterButton } from "../RegisterButton";
 export function Details() {
   const facts = [
     { k: "Date", v: EVENT.dateLabel, sub: "Saturday evening" },
-    { k: "Time", v: EVENT.timeLabel, sub: "Doors open at 6 PM" },
+    { k: "Time", v: EVENT.timeLabel, sub: "Evening until midnight" },
     { k: "Venue", v: EVENT.venue, sub: EVENT.venueArea },
   ];
   return (
