@@ -5,8 +5,8 @@ import { RegisterButton } from "../RegisterButton";
 export function Details() {
   const facts = [
     { k: "Date", v: EVENT.dateLabel, sub: "Saturday evening" },
-    { k: "Time", v: EVENT.timeLabel, sub: "Evening until midnight" },
-    { k: "Venue", v: EVENT.venue, sub: EVENT.venueArea },
+    { k: "Time", v: EVENT.timeLabel, sub: "Saturday evening onwards" },
+    { k: "Venue", v: EVENT.venue, sub: EVENT.venueAddress },
   ];
   return (
     <section id="details" className="scroll-mt-24 py-24 md:py-32">

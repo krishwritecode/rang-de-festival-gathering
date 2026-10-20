@@ -6,6 +6,8 @@ import { About } from "@/components/site/sections/About";
 import { Activities } from "@/components/site/sections/Activities";
 import { Atmosphere } from "@/components/site/sections/Atmosphere";
 import { DressCode } from "@/components/site/sections/DressCode";
+import { Tickets } from "@/components/site/sections/Tickets";
+import { HowToPay } from "@/components/site/sections/HowToPay";
 import { Details } from "@/components/site/sections/Details";
 import { Venue } from "@/components/site/sections/Venue";
 import { Stalls } from "@/components/site/sections/Stalls";
@@ -20,7 +22,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "HYD Pop-Up presents Rang De Fest: a free-entry festive night, 6 PM–12 AM on 31 October 2026 at RETAJ Academy, Qasimabad, Hyderabad.",
+          "HYD Pop-Up presents Rang De Fest: a ticketed festive night (Early Bird Rs. 1,000, Standard Rs. 1,500), 6 PM onwards on 31 October 2026 at RETAJ Academy, Qasimabad, Hyderabad.",
       },
       { property: "og:title", content: "Rang De Fest — HYD Pop-Up" },
       {
@@ -45,6 +47,8 @@ function Index() {
         <Activities />
         <Atmosphere />
         <DressCode />
+        <Tickets />
+        <HowToPay />
         <Details />
         <Venue />
         <Stalls />
