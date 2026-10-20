@@ -4,9 +4,12 @@ import { EVENT } from "@/config/event";
 import { RegisterButton } from "./RegisterButton";
 
 const NAV = [
-  { href: "#festival", label: "Festival" },
+  { href: "#festival", label: "About" },
+  { href: "#activities", label: "Activities" },
   { href: "#details", label: "Details" },
   { href: "#venue", label: "Venue" },
+  { href: "#stalls", label: "Stalls" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 function OrganizerMark() {
@@ -31,7 +34,7 @@ export function SiteHeader() {
         <a href="#top" aria-label={`${EVENT.name} home`}>
           <OrganizerMark />
         </a>
-        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-6 lg:gap-8 md:flex">
           {NAV.map((n) => (
             <a
               key={n.href}
