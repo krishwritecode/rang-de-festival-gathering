@@ -6,6 +6,8 @@ import { RegisterButton } from "./RegisterButton";
 const NAV = [
   { href: "#festival", label: "About" },
   { href: "#activities", label: "Activities" },
+  { href: "#tickets", label: "Tickets" },
+  { href: "#pay", label: "How to Pay" },
   { href: "#details", label: "Details" },
   { href: "#venue", label: "Venue" },
   { href: "#stalls", label: "Stalls" },

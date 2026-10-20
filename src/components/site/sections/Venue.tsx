@@ -13,7 +13,7 @@ export function Venue() {
           <Eyebrow>Venue</Eyebrow>
           <SectionHeading>{EVENT.venue}</SectionHeading>
           <p className="mt-4 flex items-center gap-2 text-lg text-muted-foreground">
-            <MapPin className="size-5 text-magenta" aria-hidden /> {EVENT.venueArea}
+            <MapPin className="size-5 shrink-0 text-magenta" aria-hidden /> {EVENT.venueAddress}
           </p>
           <div className="mt-8">
             {VENUE_MAP_URL ? (
