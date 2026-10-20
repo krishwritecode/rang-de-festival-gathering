@@ -1,6 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { Hero } from "@/components/site/Hero";
+import { InfoStrip } from "@/components/site/sections/InfoStrip";
+import { About } from "@/components/site/sections/About";
+import { Activities } from "@/components/site/sections/Activities";
+import { Atmosphere } from "@/components/site/sections/Atmosphere";
+import { DressCode } from "@/components/site/sections/DressCode";
+import { Details } from "@/components/site/sections/Details";
+import { Venue } from "@/components/site/sections/Venue";
+import { Stalls } from "@/components/site/sections/Stalls";
+import { Faq } from "@/components/site/sections/Faq";
+import { FinalCta } from "@/components/site/sections/FinalCta";
+import { SiteFooter } from "@/components/site/SiteFooter";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,10 +40,18 @@ function Index() {
       <SiteHeader />
       <main>
         <Hero />
-        <section id="festival" className="scroll-mt-24" />
-        <section id="details" className="scroll-mt-24" />
-        <section id="venue" className="scroll-mt-24" />
+        <InfoStrip />
+        <About />
+        <Activities />
+        <Atmosphere />
+        <DressCode />
+        <Details />
+        <Venue />
+        <Stalls />
+        <Faq />
+        <FinalCta />
       </main>
+      <SiteFooter />
     </div>
   );
 }

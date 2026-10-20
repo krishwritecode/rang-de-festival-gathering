@@ -4,9 +4,12 @@ import { EVENT } from "@/config/event";
 import { RegisterButton } from "./RegisterButton";
 
 const NAV = [
-  { href: "#festival", label: "Festival" },
+  { href: "#festival", label: "About" },
+  { href: "#activities", label: "Activities" },
   { href: "#details", label: "Details" },
   { href: "#venue", label: "Venue" },
+  { href: "#stalls", label: "Stalls" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 function OrganizerMark() {
@@ -31,7 +34,7 @@ export function SiteHeader() {
         <a href="#top" aria-label={`${EVENT.name} home`}>
           <OrganizerMark />
         </a>
-        <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-7 lg:flex">
           {NAV.map((n) => (
             <a
               key={n.href}
@@ -44,7 +47,7 @@ export function SiteHeader() {
           <RegisterButton size="lg" />
         </nav>
         <button
-          className="rounded-full p-2 text-foreground md:hidden"
+          className="rounded-full p-2 text-foreground lg:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
@@ -53,7 +56,7 @@ export function SiteHeader() {
         </button>
       </div>
       {open && (
-        <nav aria-label="Mobile" className="border-t border-border/60 bg-background px-5 pb-6 pt-2 md:hidden">
+        <nav aria-label="Mobile" className="border-t border-border/60 bg-background px-5 pb-6 pt-2 lg:hidden">
           {NAV.map((n) => (
             <a
               key={n.href}
