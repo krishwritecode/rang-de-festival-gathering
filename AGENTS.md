@@ -8,3 +8,7 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Event facts and the registration URL live only in src/config/event.ts; components read from it so details change in one place.
+- Landing page sections are separate components in src/components/site/ composed by src/routes/index.tsx.
