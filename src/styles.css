@@ -65,6 +65,8 @@
   --color-teal: var(--teal);
   --color-emerald: var(--emerald);
   --color-ivory: var(--ivory);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Manrope", system-ui, sans-serif;
 }
@@ -77,6 +79,8 @@
   --turmeric: oklch(0.83 0.16 85);
   --teal: oklch(0.55 0.1 200);
   --emerald: oklch(0.52 0.13 160);
+  --ink: oklch(0.2 0.045 350);
+  --ink-foreground: oklch(0.97 0.02 85);
   --background: var(--ivory);
   --foreground: oklch(0.22 0.04 20);
   --card: oklch(0.99 0.01 85);
