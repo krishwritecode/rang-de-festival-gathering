@@ -26,9 +26,9 @@ export function HowToPay() {
           <p className="mt-6 rounded-2xl border border-primary-foreground/40 p-4 text-sm font-semibold">
             Your registration is not confirmed until your payment is verified by our team.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-            <RegisterButton size="xl" label="Register & Pay" variant="ink" />
-            <Button asChild size="xl" variant="ink" className="bg-card text-foreground">
+          <div className="mt-8 flex flex-col gap-3">
+            <RegisterButton size="xl" label="Register & Pay" variant="ink" className="w-full" />
+            <Button asChild size="xl" variant="ink" className="w-full bg-card text-foreground">
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle /> Send Payment Proof on WhatsApp
               </a>
