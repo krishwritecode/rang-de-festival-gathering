@@ -3,7 +3,7 @@
  * Set REGISTRATION_URL to the real registration link once available.
  * While empty, all "Register Now" CTAs show a "registration opening soon" state.
  */
-export const REGISTRATION_URL = "";
+export const REGISTRATION_URL = "https://forms.gle/iquXC4tpprK9VHUi7";
 
 export const EVENT = {
   name: "Rang De Fest",
